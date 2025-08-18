@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/mf-component-library/', // Important for GitHub Pages
   plugins: [
     react(),
     tailwindcss(),
