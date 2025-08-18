@@ -32,9 +32,10 @@ jobs:
         pnpm install --no-frozen-lockfile
         pnpm build
       env:
-        REACT_APP_BASE_URL: /${{ github.event.repository.name }}/
+        NODE_ENV: production
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist
+        clean: true
