@@ -30,7 +30,7 @@ jobs:
     - name: Install & Generate 🔧
       run: |
         pnpm install --no-frozen-lockfile
-        pnpm generate --preset github_pages
+        pnpm build --preset github_pages
       env:
         NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
 
