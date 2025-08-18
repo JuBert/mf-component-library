@@ -32,7 +32,7 @@ jobs:
         pnpm install --no-frozen-lockfile
         pnpm build
       env:
-        NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
+        REACT_APP_BASE_URL: /${{ github.event.repository.name }}/
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
