@@ -1,4 +1,4 @@
-import useCount from './store.js';
+import useCount from '../store.js';
 
 export const Button = () => {
     const [count, setCount] = useCount();
