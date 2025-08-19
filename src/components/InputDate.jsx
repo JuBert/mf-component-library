@@ -22,7 +22,6 @@ const InputDate = ({
             type="date"
             value={value}
             onChange={onChange}
-            placeholder={placeholder}
             className={`w-full px-4 py-3 rounded-lg bg-[#1a1a1a] text-white border transition-colors duration-200 outline-none
                 ${error ? "border-red-500 focus:border-red-400" : "border-[#535bf2] focus:border-[#646cff]"}
                 placeholder:text-gray-400`}
