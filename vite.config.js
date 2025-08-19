@@ -15,7 +15,9 @@ export default defineConfig({
       name: 'remote_app',
       filename: 'remoteEntry.js',
       exposes: {
-        './Button': './src/Button.jsx',
+        './Button': './src/components/Button.jsx',
+        './InputDate': './src/components/InputDate.jsx',
+        './InputText': './src/components/InputText.jsx',
         './store': './src/store.js',
       },
       shared: ['react', 'react-dom', 'tailwindcss', 'jotai'],
